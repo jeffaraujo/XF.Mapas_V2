@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.Mapas.View.MapaPinCustomView"
+             xmlns:local="clr-namespace:XF.Mapas.App_Code">
+    <ContentPage.Content>
+        <local:MapaCustomizadoPin x:Name="meuMapa" MapType="Street" />
+    </ContentPage.Content>
+</ContentPage>

@@ -35,9 +35,11 @@ namespace XF.Mapas.View
             IEnumerable<Position> posicoes = await resultado;
             foreach (Position item in posicoes)
             {
-                meuMapa.MoveToRegion(MapSpan.FromCenterAndRadius(item, Distance.FromMiles(5.0)));
+                meuMapa.MoveToRegion(MapSpan.FromCenterAndRadius(item, Distance.FromMiles(2.0)));
 
                 meuMapa.Pins.Clear();
+
+                
                 var pin = new Pin
                 {
                     Type = PinType.Generic,
@@ -45,7 +47,9 @@ namespace XF.Mapas.View
                     Label = "Localização",
                     Address = txtPesquisa.Text
                 };
+                
                 meuMapa.Pins.Add(pin);
+                
                 break;
             }
         }

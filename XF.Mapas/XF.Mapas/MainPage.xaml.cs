@@ -33,5 +33,20 @@ namespace XF.Mapas
         {
             Navigation.PushAsync(new View.MarcarView());
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.MapaDemarcadoView());
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.MapaPinCustomView());
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.GPSView());
+        }
     }
 }

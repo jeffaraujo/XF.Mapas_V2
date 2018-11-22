@@ -9,7 +9,7 @@
                 <SearchBar x:Name="txtPesquisa" Placeholder="Endereço" 
                            SearchButtonPressed="txtPesquisa_SearchButtonPressed" />
             </StackLayout>
-            <mapa:Map x:Name="meuMapa" MapType="Street" 
+            <mapa:Map x:Name="meuMapa" MapType="Street"  
                       VerticalOptions="FillAndExpand" />
         </StackLayout>
     </ContentPage.Content>
